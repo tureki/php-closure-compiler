@@ -61,45 +61,54 @@
 	 * Add jQuery file and combined compression
 	 */
 	// $ary_result = $phpcc
-	// ->add("js/jquery-1.10.2.js")
-	// ->add("js/1.9/jquery-1.9.1.js")
-	// ->exec("all.js");
+	// 				->add("js/jquery-1.10.2.js")
+	// 				->add("js/1.9/jquery-1.9.1.js")
+	// 				->exec("all.js");
 	// print_r($ary_result);
 
 	/**
 	 * Add jQuery file and individual compression 
 	 */
 	// $ary_result = $phpcc
-	// ->add("js/jquery-1.10.2.js")
-	// ->add("js/1.9/jquery-1.9.1.js")
-	// ->single()
-	// ->exec();
+	// 				->add("js/jquery-1.10.2.js")
+	// 				->add("js/1.9/jquery-1.9.1.js")
+	// 				->single()
+	// 				->exec();
 	// print_r($ary_result);
 
 	/**
-	 * Set Directory path . Auto find js file and combined compression
+	 * Set Directory path find .js file and combined compression to one file.
 	 */
 	// $ary_result = $phpcc
-	// ->setDir("js")
-	// ->exec("all.js");
+	// 				->setDir("js")
+	// 				->exec("all.js");
 	// print_r($ary_result);
 
 	/**
 	 * Set Directory path . Auto find js file and individual compression 
 	 */
 	// $ary_result = $phpcc
-	// ->setDir("js")
-	// ->single()
-	// ->exec();
+	// 				->setDir("js")
+	// 				->single()
+	// 				->exec();
 	// print_r($ary_result);
 	
 	/**
 	 * Mixed 
 	 */
 	// $ary_result = $phpcc
-	// ->setDir("js")
-	// ->add("js/1.9/jquery-1.9.1.js")
-	// ->exec();
+	// 				->setDir("js")
+	// 				->add("js/1.9/jquery-1.9.1.js")
+	// 				->exec();
 	// print_r($ary_result);
 	
+	/**
+	 * You can use param() add Closure Compiler command param. 
+	 */
+	// $ary_result = $phpcc
+	// 				->add("js/jquery-1.10.2.js")
+	// 				->param("--angular_pass")
+	// 				->param("--formatting","PRETTY_PRINT")
+	// 				->exec("all.js");
+	// print_r($ary_result);
 ?>
