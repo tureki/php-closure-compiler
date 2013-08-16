@@ -1,11 +1,11 @@
 ##PHP Closure Compiler
-==
+
 **PHPCC** is a PHP Library to use Google Closure Compiler compress Javascript.
 You can view information about Google Closure Compiler on this [link](https://developers.google.com/closure/compiler/).
 
 
 
-### How to use
+## How to use
 
 Download **phpcc** Library. and then include <code>phpcc.inc</code> in your <code>.php</code> file. you can test <code>sample.php</code>.
 
@@ -50,7 +50,7 @@ print_r($phpcc->help());
 
 
 
-### How to compress
+## How to compress
 
 Add jQuery file and combined compression to one file.
 <pre>
@@ -77,7 +77,7 @@ print_r($ary_result);
 
 ----
 
-use <code>single()</code> can individual compression.
+Use <code>single()</code> can individual compression.
 <pre>
 $ary_result = $phpcc
                 ->add("js/jquery-1.10.2.js")
@@ -98,7 +98,7 @@ print_r($ary_result);
 
 ----
 
-you can also mixed.
+You can also mixed.
 <pre>
 $ary_result = $phpcc
                 ->add("js/jquery-1.10.2.js")
@@ -125,7 +125,7 @@ print_r($ary_result);
 
 
 
-### Authors
+## Authors
 
 **tureki**
 
@@ -133,6 +133,6 @@ print_r($ary_result);
 
 
 
-### Copyright and license
+## Copyright and license
 
 Copyright 2013 tureki, under [the Apache 2.0 license](LICENSE).
