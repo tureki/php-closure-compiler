@@ -7,14 +7,14 @@ You can view information about Google Closure Compiler on this [link](https://de
 
 ## How to use
 
-Download **phpcc** Library. and then include <code>phpcc.inc</code> in your <code>.php</code> file. you can test <code>sample.php</code>.
+Download **phpcc** Library. and then include <code>phpcc.php</code> in your <code>.php</code> file. You can test <code>sample.php</code> in <code>samples</code> folder.
 
 <pre>
-include 'src/phpcc.inc';
+include 'src/phpcc.php';
 
 $phpcc = new phpcc(array(
 	'java_file'    => 'YOUR JAVA FILE PATH',
-	'jar_file'     => 'src/compiler/compiler.jar', 
+	'jar_file'     => '../src/compiler/compiler.jar', 
 	'output_path'  => './output/',
 	'optimization' => 'SIMPLE_OPTIMIZATIONS'
 ));
