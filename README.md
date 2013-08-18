@@ -7,7 +7,7 @@ You can view information about Google Closure Compiler on this [link](https://de
 
 ## How to use
 
-Download **phpcc** Library. and then include <code>phpcc.class.php</code> in your <code>.php</code> file. You can test <code>sample.php</code> in <code>samples</code> folder.
+Download **phpcc** Library. and then require <code>phpcc.class.php</code> in your <code>.php</code> file. You can test <code>sample.php</code> in <code>samples</code> folder.
 
 <pre>
 require '../src/phpcc.class.php';
