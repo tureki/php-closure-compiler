@@ -1,18 +1,18 @@
 ##PHP Closure Compiler
 
-**PHPCC** is a PHP Library to use Google Closure Compiler compress Javascript.
+**phpcc** is a PHP Library to use Google Closure Compiler compress Javascript.
 You can view information about Google Closure Compiler on this [link](https://developers.google.com/closure/compiler/).
 
 
 
 ## How to use
 
-Download **phpcc** Library. and then include <code>phpcc.php</code> in your <code>.php</code> file. You can test <code>sample.php</code> in <code>samples</code> folder.
+Download **phpcc** Library. and then include <code>phpcc.class.php</code> in your <code>.php</code> file. You can test <code>sample.php</code> in <code>samples</code> folder.
 
 <pre>
-include 'src/phpcc.php';
+require '../src/phpcc.class.php';
 
-$phpcc = new phpcc(array(
+$phpcc = new PhpCc(array(
 	'java_file'    => 'YOUR JAVA FILE PATH',
 	'jar_file'     => '../src/compiler/compiler.jar', 
 	'output_path'  => './output/',

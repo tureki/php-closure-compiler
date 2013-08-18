@@ -19,13 +19,13 @@
 	/**
 	 *include library 
 	 */
-	include_once '../src/phpcc.php';
+	require '../src/phpcc.class.php';
 
 	/**
 	 * java_file 
 	 *
 	 * Linux		"/usr/lib/jvm/jre-1.6.0/bin/java"
-	 * Window7 	"C:\Program Files (x86)\Java\jre6\bin\java"
+	 * Window7 		"C:\Program Files (x86)\Java\jre6\bin\java"
 	 */
 
 	/**
@@ -44,7 +44,7 @@
 	 * phpcc config
 	 * @var phpcc
 	 */
-	$phpcc = new phpcc(array(
+	$phpcc = new PhpCc(array(
 		'java_file'    => 'YOUR_JAVA_FILE_PATH',
 		'jar_file'     => '../src/compiler/compiler.jar', 
 		'output_path'  => './output/',
@@ -55,16 +55,16 @@
 	/**
 	 * Test your phpcc setting. 
 	 */
-	// print_r($phpcc->help());
+	print_r($phpcc->help());
 
 	/**
 	 * Add jQuery file and combined compression
 	 */
-	$ary_result = $phpcc
-					->add("js/jquery-1.10.2.js")
-					->add("js/1.9/jquery-1.9.1.js")
-					->exec("all.js");
-	print_r($ary_result);
+	// $ary_result = $phpcc
+	// 				->add("js/jquery-1.10.2.js")
+	// 				->add("js/1.9/jquery-1.9.1.js")
+	// 				->exec("all.js");
+	// print_r($ary_result);
 
 	/**
 	 * Add jQuery file and individual compression 

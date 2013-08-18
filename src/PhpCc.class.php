@@ -24,7 +24,7 @@
  * @author tureki
  * 
  **/
-class phpcc {
+class PhpCc {
 	
 	public function __construct($options) 
 	{
