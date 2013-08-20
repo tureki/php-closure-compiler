@@ -9,7 +9,7 @@ You can view information about Google Closure Compiler on this [link](https://de
 
 Download **phpcc** Library. and then require <code>phpcc.class.php</code> in your <code>.php</code> file. You can test <code>sample.php</code> in <code>samples</code> folder.
 
-<pre>
+```php
 require '../src/phpcc.class.php';
 
 $phpcc = new PhpCc(array(
@@ -18,7 +18,7 @@ $phpcc = new PhpCc(array(
 	'output_path'  => './output/',
 	'optimization' => 'SIMPLE_OPTIMIZATIONS'
 ));
-</pre>
+```
 
 
 
@@ -53,53 +53,53 @@ print_r($phpcc->help());
 ## How to compress
 
 Add jQuery file and combined compression to one file.
-<pre>
+```php
 $ary_result = $phpcc
                 ->add("js/jquery-1.10.2.js")
                 ->add("js/1.9/jquery-1.9.1.js")
                 ->exec("all.js");
 print_r($ary_result);
-</pre>
+```
 
 
 
 ----
 
 Set Directory path find <code>.js</code> file and combined compression to one file.
-<pre>
+```php
 $ary_result = $phpcc
                 ->setDir("./js")
                 ->exec("all.js");
 print_r($ary_result);
-</pre>
+```
 
 
 
 ----
 
 Use <code>single()</code> can individual compression.
-<pre>
+```php
 $ary_result = $phpcc
                 ->add("js/jquery-1.10.2.js")
                 ->add("js/1.9/jquery-1.9.1.js")
                 ->single()
                 ->exec();
 print_r($ary_result);
-</pre>
-<pre>
+```
+```php
 $ary_result = $phpcc
                 ->setDir("./js")
                 ->single()
                 ->exec();
 print_r($ary_result);
-</pre>
+```
 
 
 
 ----
 
 You can also mixed.
-<pre>
+```php
 $ary_result = $phpcc
                 ->add("js/jquery-1.10.2.js")
                 ->add("js/1.9/jquery-1.9.1.js")
@@ -107,21 +107,21 @@ $ary_result = $phpcc
                 ->single()
                 ->exec();
 print_r($ary_result);
-</pre>
+```
 
 
 
 ----
 
 You can use <code>param()</code> add Closure Compiler command param.
-<pre>
+```php
 $ary_result = $phpcc
                 ->add("js/jquery-1.10.2.js")
                 ->param("--angular_pass")
                 ->param("--formatting","PRETTY_PRINT")
                 ->exec("all.js");
 print_r($ary_result);
-</pre>
+```
 
 
 
