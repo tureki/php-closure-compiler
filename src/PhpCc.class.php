@@ -26,6 +26,8 @@
  **/
 class PhpCc {
 	
+	static public $VERSION = "v0.5.0";
+
 	public function __construct($options) 
 	{
 
@@ -47,7 +49,7 @@ class PhpCc {
 	 * Add javascript file to compiler list
 	 * 
 	 * @param string $file 
-	 * @return class phpcc 
+	 * @return self
 	 */
 	public function add($file)
 	{
@@ -70,12 +72,17 @@ class PhpCc {
 	 * Execute compiler.
 	 * 
 	 * @param string $filename 
-	 * @return class phpcc
+	 * @return self
 	 */
 	public function exec($filename = 'all.min.js') 
 	{
 		
 		$str_file = '';
+
+		if(substr($this->js_dir, -1)=="/")
+		{
+			$this->js_dir = substr($this->js_dir,0, strlen($this->js_dir)-1);
+		}
 
 		if($this->bol_single){
 
@@ -98,9 +105,9 @@ class PhpCc {
 			for ($i=0; $i < $num_js; $i++) { 
 		
 				$str_file     = ' --js ' . $this->js_files_dir[$i];
-				echo $this->js_files_dir[$i] ."|" . $this->js_dir . "\n";
+
 				$filename     = str_replace($this->js_dir, '', $this->js_files_dir[$i]);
-				echo $filename."\n";
+
 				$ary_result[] = $this->_get_argv($str_file,$filename);
 
 			}
@@ -151,7 +158,7 @@ class PhpCc {
 	/**
 	 * Compress all js to one file.
 	 * 
-	 * @return class phpcc
+	 * @return self
 	 */
 	public function merge()
 	{
@@ -167,7 +174,7 @@ class PhpCc {
 	 *
 	 * @param string $param
 	 * @param string $value 
-	 * @return class phpcc
+	 * @return self
 	 */
 	public function param($param,$value=null)
 	{
@@ -191,7 +198,7 @@ class PhpCc {
 	/**
 	 * Reset all setting.
 	 *
-	 * @return class phpcc
+	 * @return self
 	 */
 	public function reset()
 	{

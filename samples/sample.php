@@ -69,6 +69,7 @@
 	/**
 	 * Add jQuery file and individual compression 
 	 */
+	// $phpcc->reset();
 	// $ary_result = $phpcc
 	// 				->add("js/jquery-1.10.2.js")
 	// 				->add("js/1.9/jquery-1.9.1.js")
@@ -79,6 +80,7 @@
 	/**
 	 * Set Directory path find .js file and combined compression to one file.
 	 */
+	// $phpcc->reset();
 	// $ary_result = $phpcc
 	// 				->setDir("js")
 	// 				->exec("all.js");
@@ -87,6 +89,7 @@
 	/**
 	 * Set Directory path . Auto find js file and individual compression 
 	 */
+	// $phpcc->reset();
 	// $ary_result = $phpcc
 	// 				->setDir("js")
 	// 				->single()
@@ -96,6 +99,7 @@
 	/**
 	 * Mixed 
 	 */
+	// $phpcc->reset();
 	// $ary_result = $phpcc
 	// 				->setDir("js")
 	// 				->add("js/1.9/jquery-1.9.1.js")
@@ -105,6 +109,7 @@
 	/**
 	 * You can use param() add Closure Compiler command param. 
 	 */
+	// $phpcc->reset();
 	// $ary_result = $phpcc
 	// 				->add("js/jquery-1.10.2.js")
 	// 				->param("--angular_pass")
