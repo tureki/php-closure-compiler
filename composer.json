@@ -1,0 +1,19 @@
+{
+	"name": "tureki/phpcc",
+	"description": "A PHP Library to use Google Closure Compiler compress Javascript ",
+	"keywords": [ "php", "compress", "closure compiler" ],
+	"type": "library",
+	"license": "Apache 2",
+	"authors": [{
+		"name": "tureki",
+		"homepage": "https://github.com/tureki"
+	}],
+	"require": {
+		"php": ">=5.2.0",
+	},
+	"autoload": {
+		"psr-0": {
+			"tureki": "src/"
+		}
+	}
+}

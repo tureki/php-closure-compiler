@@ -5,6 +5,41 @@ You can view information about Google Closure Compiler on this [link](https://de
 
 
 
+##Installation
+
+You can install the library with composer or manually.
+
+#### Composer
+
+Step 1. Edit your `composer.json`:
+
+```json
+{
+    "require": {
+        "tureki/phpcc": ">=1.0.0"
+    }
+}
+```
+
+Step 2. Install it:
+
+```bash
+$ curl -sS https://getcomposer.org/installer | php
+$ php composer.phar install
+```
+
+#### Manually From Release
+
+Step 1. [Download the latest release](https://github.com/tureki/php-closure-compiler/releases)
+
+Step 2. Include the library:
+
+```php
+require_once '[path to phpcc]/phpcc.class.php';
+```
+
+
+
 ## How to use
 
 Download **phpcc** Library. and then require <code>phpcc.class.php</code> in your <code>.php</code> file. You can test <code>sample.php</code> in <code>samples</code> folder.
