@@ -19,7 +19,7 @@
 	/**
 	 *include library 
 	 */
-	require '../src/phpcc.class.php';
+	require '../src/tureki/phpcc.php';
 
 	/**
 	 * java_file 
@@ -44,7 +44,7 @@
 	 * phpcc config
 	 * @var phpcc
 	 */
-	$phpcc = new PhpCc(array(
+	$phpcc = new tureki\PhpCc(array(
 		'java_file'    => 'YOUR_JAVA_FILE_PATH',
 		'jar_file'     => '../src/compiler/compiler.jar', 
 		'output_path'  => './output/',

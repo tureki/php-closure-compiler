@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+namespace tureki;
+
 /**
  * PHP Closure Compiler
  * A PHP Library to use Google Closure Compiler compress Javascript
@@ -26,7 +28,7 @@
  **/
 class PhpCc {
 	
-	static public $VERSION = "v0.5.0";
+	static public $VERSION = "v1.0.0";
 
 	public function __construct($options) 
 	{
