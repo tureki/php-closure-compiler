@@ -46,7 +46,6 @@
 	 */
 	$phpcc = new tureki\PhpCc(array(
 		'java_file'    => 'YOUR_JAVA_FILE_PATH',
-		'jar_file'     => '../src/compiler/compiler.jar', 
 		'output_path'  => './output/',
 		'optimization' => 'SIMPLE_OPTIMIZATIONS',
 		'charset'      => 'utf-8'
