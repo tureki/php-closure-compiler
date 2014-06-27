@@ -35,7 +35,7 @@ Step 1. [Download the latest release](https://github.com/tureki/php-closure-comp
 Step 2. Include the library:
 
 ```php
-require_once '[path to phpcc]/phpcc.class.php';
+require_once '[path to phpcc]/phpcc.php';
 ```
 
 
@@ -45,9 +45,9 @@ require_once '[path to phpcc]/phpcc.class.php';
 Download **phpcc** Library. and then require <code>phpcc.class.php</code> in your <code>.php</code> file. You can test <code>sample.php</code> in <code>samples</code> folder.
 
 ```php
-require '../src/phpcc.class.php';
+require '../src/phpcc.php';
 
-$phpcc = new PhpCc(array(
+$phpcc = new tureki\PhpCc(array(
 	'java_file'    => 'YOUR JAVA FILE PATH',
 	'jar_file'     => '../src/compiler/compiler.jar', 
 	'output_path'  => './output/',
