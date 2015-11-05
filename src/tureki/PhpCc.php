@@ -130,9 +130,9 @@ class PhpCc {
 			
 			$opt        = $this->_get_options();
 
-            if ($opt['sort']) {
-    			sort($this->js_files);
-            }
+			if ($opt['sort']) {
+				sort($this->js_files);
+			}
 			
 			$num_js         = count($this->js_files);
 
