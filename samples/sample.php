@@ -5,26 +5,26 @@
      */
     require '../src/tureki/phpcc.php';
 
-    /*
+    /**
      * java_file
      *
      * Linux        "/usr/lib/jvm/jre-1.6.0/bin/java"
      * Window7      "C:\Program Files (x86)\Java\jre6\bin\java"
      */
 
-    /*
+    /**
      * jar_file
      *
      * You can download source from http://code.google.com/p/closure-compiler/wiki/BinaryDownloads
      */
 
-    /*
+    /**
      * output_path
      *
      * Output path of compress file when success
      */
 
-    /*
+    /**
      * phpcc config
      * @var phpcc
      */
@@ -35,12 +35,12 @@
         'charset' => 'utf-8',
     ));
 
-    /*
+    /**
      * Test your phpcc setting.
      */
     print_r($phpcc->help());
 
-    /*
+    /**
      * Add jQuery file and combined compression
      */
     // $ary_result = $phpcc
@@ -49,7 +49,7 @@
     //              ->exec("all.js");
     // print_r($ary_result);
 
-    /*
+    /**
      * Add jQuery file and individual compression
      */
     // $phpcc->reset();
@@ -60,7 +60,7 @@
     //              ->exec();
     // print_r($ary_result);
 
-    /*
+    /**
      * Set Directory path find .js file and combined compression to one file.
      */
     // $phpcc->reset();
@@ -69,7 +69,7 @@
     //              ->exec("all.js");
     // print_r($ary_result);
 
-    /*
+    /**
      * Set Directory path . Auto find js file and individual compression
      */
     // $phpcc->reset();
@@ -79,7 +79,7 @@
     //              ->exec();
     // print_r($ary_result);
 
-    /*
+    /**
      * Mixed
      */
     // $phpcc->reset();
@@ -89,7 +89,7 @@
     //              ->exec();
     // print_r($ary_result);
 
-    /*
+    /**
      * You can use param() add Closure Compiler command param.
      */
     // $phpcc->reset();

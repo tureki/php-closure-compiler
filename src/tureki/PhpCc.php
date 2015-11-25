@@ -9,7 +9,8 @@ namespace tureki;
  * @copyright tureki.org
  * @author tureki
  *
- **/
+ */
+
 class PhpCc
 {
 
@@ -81,7 +82,6 @@ class PhpCc
 
                 $ary_result[] = $this->_getArgv($str_file, $filename);
             }
-
 
             return $ary_result;
         } else {
