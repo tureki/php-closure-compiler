@@ -235,7 +235,7 @@ class PhpCc
 
     private function _getArgv($str_file, $filename)
     {
-        $opt        = $this->_getOptions();
+        $opt        = $this->options;
         
         $str_output = $opt["output_path"].$filename;
         
@@ -259,15 +259,10 @@ class PhpCc
 
     private function _getCmd()
     {
-        $opt = $this->_getOptions();
+        $opt = $this->options;
 
         $str_cmd = $opt['java_file'] . ' -jar ' . $opt['jar_file'];
 
         return $str_cmd;
-    }
-
-    private function _getOptions()
-    {
-        return $this->options;
     }
 }
