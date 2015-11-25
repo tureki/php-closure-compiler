@@ -17,7 +17,7 @@ class PhpCc
     {
         $this->options = array(
             'java_file'    => 'java',
-            'jar_file'     => __DIR__.'/vendor/closure-compiler/compiler.jar',
+            'jar_file'     => __DIR__.'/../../closure-compiler/compiler.jar',
             'output_path'  => '/',
             'optimization' => 'SIMPLE_OPTIMIZATIONS',
             'charset'      => 'utf-8',
