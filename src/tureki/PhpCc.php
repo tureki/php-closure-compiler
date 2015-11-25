@@ -20,8 +20,7 @@ class PhpCc
             'jar_file'     => __DIR__.'/../../closure-compiler/compiler.jar',
             'output_path'  => '/',
             'optimization' => 'SIMPLE_OPTIMIZATIONS',
-            'charset'      => 'utf-8',
-            'sort'         => true,
+            'charset'      => 'utf-8'
         );
 
         $this->options = array_merge($this->options, $options);
@@ -90,13 +89,7 @@ class PhpCc
                 $this->js_files = array_merge($this->js_files, $this->js_files_dir);
             }
 
-            $this->js_files = array_unique($this->js_files);
-            
-            $opt        = $this->_getOptions();
-
-            if ($opt['sort']) {
-                sort($this->js_files);
-            }
+            $this->js_files = array_values(array_unique($this->js_files));
             
             $num_js         = count($this->js_files);
 
