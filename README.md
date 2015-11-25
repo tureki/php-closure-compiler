@@ -16,7 +16,7 @@ Step 1. Edit your `composer.json`:
 ```json
 {
     "require": {
-        "tureki/phpcc": ">=1.0.0"
+        "tureki/phpcc": ">=1.0.5"
     }
 }
 ```
@@ -68,11 +68,9 @@ Example:
 
 
 
-
 ----
 
 <code>jar_file</code> is Google Closure Compiler jar file. Your can download latest version on this [link](http://code.google.com/p/closure-compiler/wiki/BinaryDownloads)
-
 
 
 
@@ -160,6 +158,11 @@ print_r($ary_result);
 
 
 
+## Todo
+
+a. Add Unit Test
+b. Integrate CI
+
 ## Authors
 
 **tureki**
@@ -168,6 +171,6 @@ print_r($ary_result);
 
 
 
-## Copyright and license
+## Copyright and License
 
-Copyright 2013 tureki, under [the Apache 2.0 license](LICENSE).
+Copyright 2013 tureki, under [MIT License](http://opensource.org/licenses/MIT).
