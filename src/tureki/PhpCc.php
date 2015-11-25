@@ -12,7 +12,6 @@ namespace tureki;
  **/
 class PhpCc
 {
-    public static $VERSION = "v1.0.0";
 
     public function __construct($options)
     {
