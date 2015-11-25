@@ -3,9 +3,14 @@
 	"description": "A PHP Library to use Google Closure Compiler compress Javascript ",
 	"keywords": [ "php", "compress", "closure compiler" ],
 	"type": "library",
-	"license": "Apache 2",
+	"license": "MIT",
+	"support": {
+        "issues": "https://github.com/tureki/php-closure-compiler/issues",
+        "source": "https://github.com/tureki/php-closure-compiler"
+    },
 	"authors": [{
 		"name": "tureki",
+		"email": "tureki@me.com",
 		"homepage": "https://github.com/tureki"
 	}],
 	"require": {
